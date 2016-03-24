@@ -1,0 +1,22 @@
+There are four domains.
+
+1. abortion
+2. gayRights
+3. obama
+4. marijuana
+
+For each domain, there is a folder with the data files. This folder has the same name as the one mentioned above for the domain.
+
+Each file inside a data folder (e.g., abortion) has an alphanumeric name (e.g., A15, D31). The prefix (e.g., A, B, C) denotes a debate within the domain and the number following the prefix is the id for the file in that debate. For each file, there is a .data file, which contains only the text for that file. There is also a .meta file for each file. A .meta file contains four lines. Let us take the following example of abortion/A2.meta. It has the following lines.
+
+ID=2
+PID=1
+Stance=+1
+rebuttal=oppose
+
+ID=2 means the file's ID is 2, same as the numerical suffix of the file name. PID=1 means A2 is a reply to the post A1 (i.e., PID=1 is the numeric suffix of the parent in the same series 'A'). PID=-1 means the file has no parent. This parent pointer is needed to re-create a message thread. Stance=+1 means pro (i.e., for), -1 means con (i.e., against). 'rebuttal=oppose' means A2 opposes A1 (i.e., A2's parent post). The default value for this field is 'null'.
+
+There is another folder called 'authors'. There is a folder for each domain inside this folder. Inside each domain folder, there is one .author file for each debate in that domain. These .author files contain the post vs. author ID map for that debate.
+
+Note::
+This dataset should not be shared/distributed without permission. For any queries, please write to saidul@hlt.utdallas.edu.
