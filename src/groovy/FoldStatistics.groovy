@@ -1,0 +1,7 @@
+package groovy
+
+class FoldStatistics {
+
+	
+	
+}
