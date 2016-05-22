@@ -1,8 +1,3 @@
-"""
-The Sudoku Problem Formulation for the PuLP Modeller
-Authors: Antony Phillips, Dr Stuart Mitcehll
-"""
-
 # Import PuLP modeler functions
 from pulp import *
 from sklearn.externals import joblib
