@@ -1,7 +1,0 @@
-package groovy
-
-class FoldStatistics {
-
-	
-	
-}
